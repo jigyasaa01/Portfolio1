@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigyasa- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(0,0,33);
+            color:white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover{
+            color:rgb(153, 153, 226);
+            font-size: 1.1rem;
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 50px 84px;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .firstSection > div{
+            width: 40%;
+        }
+
+        .leftSection{
+            font-size: 3rem;
+        }
+
+        .leftSection .buttons{
+            padding: 23px;
+            
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background-color: rgb(0,0,33);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .leftSection .btn a{
+            color:white;
+            text-decoration: none;
+        }
+
+        .rightSection img{
+            width: 80%;
+        }
+
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+
+        .text-gray{
+            color: rgb(173, 171, 171);
+        }
+
+        #element{
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top{
+            width: 45px;
+            position: relative;
+            top: -35px;
+            left: -20px;
+        }
+
+        .vertical-title{
+            position: relative;
+            top: 60px;
+            width: 150px;
+            left: -2px;
+        }
+
+        .language{
+            position: relative;
+            top: 70px;
+            color: #b4afaf;
+            left: -3px;
+            width: 150px;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 70px;
+            color: gray;
+            left: -3px;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        .footer{
+            background-color: rgb(255, 255, 255);
+        }
+
+        .footer{
+            display: flex;
+            color: rgb(18, 18, 62);
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            font-family: 'Poppins';
+        }
+
+        .footer ul{
+            list-style: none;
+        }
+
+        .footer > div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            color:gray;
+            padding: 12px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class = "left">
+                Jigyasa's Portfolio
+            </div>
+            <div class = "right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Jigyasa</span>
+                <div>and I am a Passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="Resume.pdf" download="Resume.pdf">Download Resume</a>
+                    </button>
+                    <button class="btn">
+                        <a href="https://github.com/jigyasaa01">Github</a>
+                    </button>
+                    <button class="btn">
+                        <a href="http://www.linkedin.com/in/jigyasachourasia">LinkdIn</a>
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Banking System
+                    </div>
+                    <div class="language">
+                        C++
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a command-line banking system in C++ to simulate basic banking operations like account creation, deposits, withdrawals, and balance inquiries. The system ensures security through user authentication and follows an object-oriented approach, making the code modular and maintainable.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Supply Chain Optimization
+                    </div>
+                    <div class="language">
+                        Python | HTML | CSS | JavaScript | Sarima
+                    </div>
+                    <div class="vertical-desc">
+                        Implemented a supply chain optimization model that predicts future demand using the SARIMA time-series forecasting model. Built an interactive front-end using HTML, CSS, and JavaScript to visualize insights, enabling businesses to minimize operational costs and improve resource allocation.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Deep Fake Detection
+                    </div>
+                    <div class="language">
+                        Python | ResNet | LSTM
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a deep learning model to detect deepfake videos using LSTM for temporal sequence analysis and ResNet for image classification. This Python-based solution effectively distinguishes manipulated media, ensuring media authenticity and combating misinformation.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Machine Learning Preprocessor using CLI 
+                    </div>
+                    <div class="language">
+                        Python | NumPy | CLI | Matplotlib | Pandas
+                    </div>
+                    <div class="vertical-desc">
+                        Designed a command-line interface (CLI) tool in Python that automates data preprocessing tasks like normalization, feature selection, and handling missing values. The tool simplifies the data preparation pipeline, enabling users to efficiently preprocess data for machine learning models.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Teeny Tiny Compiler
+                    </div>
+                    <div class="language">
+                        Python
+                    </div>
+                    <div class="vertical-desc">
+                        Built a minimalist compiler in Python capable of parsing and interpreting a simple custom programming language. The project covers basic concepts of lexical analysis, syntax analysis, and code generation, providing a strong foundation in compiler theory.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="developer.png" alt="" class="image-top">
+                    <div class="vertical-title">
+                        Employee Record Management System
+                    </div>
+                    <div class="language">
+                        HTML| CSS | JavaScript | Django
+                    </div>
+                    <div class="vertical-desc">
+                        Created a full-stack web application using Django to manage employee records, including functionality for adding, updating, and viewing employee details. The system is designed with a user-friendly interface, styled using HTML, CSS, and JavaScript, and ensures secure data handling through backend integration.
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+                <div class="footer-first">
+                    <h1>Jigyasa's Developer Portfolio</h1>
+                </div>
+
+                <div class="footer-second">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+
+                <div class="footer-third">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer-rights">
+            copyright &#169; jigyasasportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Coder','Web Designer','Learner'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
